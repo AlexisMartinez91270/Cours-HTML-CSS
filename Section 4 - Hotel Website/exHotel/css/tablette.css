@@ -1,0 +1,102 @@
+/* Utility Classes */
+.btn {
+  font-size: 12px;
+  padding: 6px 10px;
+}
+
+/* Showcase */
+#showcase {
+  height: 300px;
+}
+
+#showcase .showcase-content {
+  padding: 50px;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 30px;
+  line-height: 1.2em;
+}
+
+#showcase .showcase-content p {
+  padding-bottom: 15px;
+  line-height: 1.2em;
+}
+
+/* Info */
+.info-content {
+  padding: 35px 17px;
+}
+
+.info-content h2 {
+  font-size: 20px;
+}
+
+.info-content p {
+  font-size: 14px;
+  line-height: 1.2em;
+}
+
+/* Features */
+#features .box {
+  padding: 20px;
+  font-size: 17px;
+}
+
+/* About Info */
+#about-info .info-left {
+  float: left;
+  width: 100%;
+}
+
+#about-info .info-left h1 {
+  font-size: 32px;
+}
+
+#about-info .info-right {
+  display: none;
+}
+
+/* Testimonials */
+#testimonials {
+  padding-top: 40px;
+}
+
+#testimonials h2 {
+  padding-bottom: 20px;
+}
+
+#testimonials .testimonial {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: block;
+  margin: 0%;
+}
+
+#testimonials .testimonial:first-of-type {
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+
+/* Contact Form*/
+#contact-form .btn {
+  font-size: 18px;
+  padding: 13px 20px;
+}
+
+#contact-info .box {
+  width: 50%;
+  font-size: 16px;
+  padding: 40px;
+}
+
+#contact-info .box:last-of-type {
+  width: 100%;
+}
+
+/* Footer */
+#main-footer {
+  font-size: 15px;
+  padding: 15px;
+}
