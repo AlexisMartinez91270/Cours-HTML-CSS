@@ -1,14 +1,13 @@
 /* Reset */
 * {
   margin: 0;
-  padding: 0;
+  padding:0;
   box-sizing: border-box;
 }
 
 /* Main Styling */
-html,
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+html,body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7em;
 }
 
@@ -17,9 +16,7 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   padding-bottom: 20px;
 }
 
@@ -36,7 +33,7 @@ p {
 }
 
 .text-primary {
-  color: #6dacf3;
+  color: #f7c08a;
 }
 
 .lead {
@@ -54,7 +51,7 @@ p {
 }
 
 .btn:hover {
-  background: #6dacf3;
+  background: #f7c08a;
   color: #333;
 }
 
@@ -74,15 +71,8 @@ p {
 }
 
 .bg-primary {
-  background: #6dacf3;
-  color: #f4f4f4;
-}
-
-.box {
-  float: left;
-  width: 33.3%;
-  padding: 50px;
-  text-align: center;
+  background: #f7c08a;
+  color: #333;
 }
 
 .clr {
@@ -91,22 +81,16 @@ p {
 
 .l-heading {
   font-size: 40px;
+  line-height: 1.2;
 }
 
 /* Padding */
-.py-1 {
-  padding: 10px 0;
-}
-.py-2 {
-  padding: 20px 0;
-}
-.py-3 {
-  padding: 30px 0;
-}
+.py-1 { padding: 10px 0; }
+.py-2 { padding: 20px 0; }
+.py-3 { padding: 30px 0; }
 
 /* Navbar */
 #navbar {
-  position: sticky;
   background: #333;
   color: #fff;
   overflow: auto;
@@ -116,49 +100,42 @@ p {
   color: #fff;
 }
 
-.logo {
+#navbar .logo {
   float: left;
   padding-top: 20px;
 }
 
-#navbar .container ul {
-  float: right;
+#navbar ul {
   list-style: none;
-  display: block;
+  float: right;
 }
 
-#navbar .container ul li {
+#navbar ul li {
   float: left;
 }
 
 #navbar ul li a {
-  display: inline-block;
+  display: block;
   padding: 20px;
   text-align: center;
 }
 
-#navbar ul li a:hover,
+#navbar ul li a:hover, 
 #navbar ul li a.current {
   background: #444;
-  color: #4a82c2;
-}
-
-#navbar i {
-  display: none;
-  padding-right: 20px;
-  cursor: pointer;
+  color: #f7c08a;
 }
 
 /* Showcase */
 #showcase {
-  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  background: url('../img/showcase.jpg') no-repeat center center/cover;
   height: 600px;
 }
 
 #showcase .showcase-content {
   color: #fff;
   text-align: center;
-  padding: 170px;
+  padding-top: 170px;
 }
 
 #showcase .showcase-content h1 {
@@ -171,55 +148,44 @@ p {
   line-height: 1.7em;
 }
 
-/* Info */
+/* Home Info */
 #home-info {
-  height: 400px;
+  height: 450px;
 }
 
-.info-img {
+#home-info .info-img {
   float: left;
   width: 50%;
-  background: url("../img/photo-1.jpg") no-repeat;
+  background: url('../img/photo-1.jpg') no-repeat;
   min-height: 100%;
 }
 
-.info-content {
+#home-info .info-content {
   float: right;
   width: 50%;
   height: 100%;
   text-align: center;
   padding: 50px 30px;
   overflow: hidden;
-  background-color: #242424;
-  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
-  background-size: contain;
 }
 
-.info-content p {
-  margin-bottom: 50px;
+#home-info .info-content p {
+  padding-bottom: 30px;
 }
 
 /* Features */
-#features .box {
-  width: 50%;
+.box {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align:center;
 }
 
-#features .box i {
+.box i {
   margin-bottom: 10px;
 }
 
 /* About Info */
-#about-info {
-  background-color: #aa8c65;
-  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
-  background-size: contain;
-}
-
-#about-info .info-left {
-  float: left;
-  width: 50%;
-}
-
 #about-info .info-right {
   float: right;
   width: 50%;
@@ -227,16 +193,22 @@ p {
 }
 
 #about-info .info-right img {
-  border-radius: 50%;
-  width: 70%;
   display: block;
   margin: auto;
+  width: 70%;
+  border-radius: 50%;
+}
+
+#about-info .info-left {
+  float: left;
+  width: 50%;
+  min-height: 100%;
 }
 
 /* Testimonials */
 #testimonials {
-  min-height: 600px;
-  background: url("../img/test-bg.jpg") no-repeat center center/cover;
+  height: 100%;
+  background: url('../img/test-bg.jpg') no-repeat center center/cover;
   padding-top: 100px;
 }
 
@@ -251,9 +223,6 @@ p {
   margin-bottom: 40px;
   border-radius: 5px;
   opacity: 0.9;
-  width: 30%;
-  display: inline-block;
-  margin: 0% 9.8%;
 }
 
 #testimonials .testimonial img {
@@ -264,15 +233,6 @@ p {
 }
 
 /* Contact Form */
-#contact-form {
-  background-color: #c0dafa;
-  background-image: url("https://www.transparenttextures.com/patterns/dark-leather.png");
-}
-
-#contact-form .text-primary {
-  color: #0f509b;
-}
-
 #contact-form .form-group {
   margin-bottom: 20px;
 }
@@ -282,27 +242,27 @@ p {
   margin-bottom: 5px;
 }
 
-#contact-form input,
+#contact-form input, 
 #contact-form textarea {
   width: 100%;
   padding: 10px;
-  border: 1.5px #ddd solid;
+  border: 1px #ddd solid;
 }
 
 #contact-form textarea {
   height: 200px;
 }
 
-#contact-form input:focus,
+#contact-form input:focus, 
 #contact-form textarea:focus {
   outline: none;
-  border-color: #0f509b;
+  border-color: #f7c08a;
 }
 
 /* Footer */
 #main-footer {
-  background: #444;
   text-align: center;
+  background: #444;
   color: #fff;
   padding: 20px;
 }
