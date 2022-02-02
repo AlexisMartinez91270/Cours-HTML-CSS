@@ -66,16 +66,19 @@ p {
 .bg-dark {
   background: #333;
   color: #fff;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
 }
 
 .bg-light {
   background: #f4f4f4;
   color: #333;
+  background-image: url("https://www.transparenttextures.com/patterns/green-cup.png");
 }
 
 .bg-primary {
   background: #6dacf3;
   color: #f4f4f4;
+  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
 }
 
 .box {
@@ -143,10 +146,12 @@ p {
   color: #4a82c2;
 }
 
-#navbar i {
+#navbar .burger-menu {
   display: none;
   padding-right: 20px;
+  padding-top: 20px;
   cursor: pointer;
+  float: right;
 }
 
 /* Showcase */
@@ -200,8 +205,13 @@ p {
 }
 
 /* Features */
+#features {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #features .box {
-  width: 50%;
+  width: 25%;
 }
 
 #features .box i {
