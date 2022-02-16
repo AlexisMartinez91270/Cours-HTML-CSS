@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Transform</title>
+    <style>
+      body {
+        background: #333;
+        height: 100vh;
+      }
+
+      .box {
+        background: white;
+        width: 300px;
+        height: 300px;
+        box-shadow: 10px 10px teal;
+        /* Transform - rotate, scale, skew */
+        /* transform: rotate(25deg); */
+        /* transform: skew(25deg); */
+        /* transform: scale(2); */
+        transition: all 1s ease-in-out;
+      }
+
+      .box:hover {
+        /* transform: rotate(180deg); */
+        /* transform: skew(25deg); */
+        /* transform: scale(2); */
+        /* border-radius: 50%;
+        background-color: blue; */
+        /* transform: translateY(100px);
+        transform: translateX(-100px); */
+        /* x & y */
+        background-color: red;
+        color: white;
+        font-size: larger;
+        box-shadow: 20px 20px pink;
+        transform: translate(30vw, 50vh) rotate(180deg) skew(50deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias
+      architecto sint possimus ipsam quia pariatur vitae eaque quisquam
+      voluptate, similique nulla placeat neque distinctio inventore harum sit
+      enim corrupti nesciunt atque consequatur vero nemo quaerat officiis
+      officia. Perferendis, ratione eaque.
+    </div>
+  </body>
+</html>

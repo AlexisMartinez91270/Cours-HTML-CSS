@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>More Selectors</title>
+    <style>
+      /* if div is a direct parent of p */
+      div > p {
+        background-color: #ddd;
+      }
+
+      div > div {
+        background-color: orange;
+      }
+
+      /* if p is right after div */
+      div + p {
+        background: #333;
+        color: #fff;
+      }
+
+      /* Ecrase le suivant car plus précis */
+      div > div + p {
+        background-color: purple;
+      }
+
+      /* if p is preceded by a ul with same parent */
+      ul ~ p {
+        background: #ff0000;
+        color: #fff;
+      }
+
+      /* Target attribute */
+      P + div > a[target] {
+        background: #ddd;
+      }
+
+      /* Target specific attribute value */
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+      }
+
+      form > input[type]:first-child {
+        width: 50%;
+      }
+
+      div + form > input[type="email"] ~ input[type="submit"] {
+        background-color: orangered;
+        color: #333;
+        width: 20%;
+        height: 5vh;
+      }
+
+      ul ~ a[target="_blank"] {
+        background: yellow;
+        color: green;
+      }
+
+      ul ~ a {
+        background: #ff0000;
+        color: #fff;
+      }
+
+      div p ~ ul > li p {
+        color: #ff0000;
+        background-color: aqua;
+      }
+
+      ul > :first-child {
+        background-color: pink;
+      }
+
+      /* Ne fontionne pas car pas de > */
+      ul:first-child {
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Lorem ipsum dolor sit amet.</p>
+
+      <ul>
+        <li>Item 1</li>
+        <li><p>Lorem ipsum dolor sit amet.</p></li>
+        <li>Item 3</li>
+      </ul>
+
+      <div>dsds</div>
+
+      <p>Lorem ipsum dolor sit amet.</p>
+
+      <a href="#">Page 1</a> <a href="#">Page 2</a>
+      <a href="http://google.com" target="_blank">Google</a>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <div>
+      <a href="#">Page 1</a> <a href="#">Page 2</a>
+      <a href="http://google.com" target="_blank">Google</a>
+    </div>
+
+    <ul>
+      <li>1a</li>
+      <li>2b</li>
+      <li>3c</li>
+    </ul>
+
+    <form>
+      <input type="text" placeholder="Name" />
+      <input type="email" placeholder="Email" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
